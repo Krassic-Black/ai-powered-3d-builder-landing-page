@@ -1,7 +1,11 @@
+import Header from "./components/common/header/Header";
+import HomePage from "./pages/home";
+
 const App = () => {
   return (
     <>
-      <h2 className="text-9xl">Header</h2>
+      <Header />
+      <HomePage />
     </>
   );
 };

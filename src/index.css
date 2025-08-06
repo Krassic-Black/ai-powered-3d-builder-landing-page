@@ -4,17 +4,26 @@
 
 * {
   font-family: "Inter", sans-serif;
+  transition: all 250ms ease-in-out;
 }
 
 @theme {
   --font-display: "Inter", "sans-serif";
   --color-app-bg: #000000;
+  --color-text-bg: #160c18;
   --color-b-blob-bg: rgba(236, 109, 225, 0.5);
   --color-tl-blob-bg: #ec6dff;
   --color-tm-blob-bg: #502e55;
   --color-tr-blob-bg: #ec6dff;
-  --bg-color-header-bg: rgba(15, 15, 16, 0.1);
-  --bg-header-surface-bg: linear-gradient(to top #ec6dff, #ec6dff);
+  --color-header-bg: rgba(15, 15, 16, 0.1);
+  --color-header-surface-bg: linear-gradient(to top #ec6dff, #ec6dff);
+  --color-gradient-bg: linear-gradient(
+    90deg,
+    rgba(236, 109, 255, 1) 0%,
+    rgba(236, 109, 255, 0) 100%
+  );
+
+  --color-nav-bg: rgba(144, 128, 146, 0.1);
 
   --blob-blur: 0 0 280 0;
   --color-border-primary: #908092;
@@ -23,4 +32,6 @@
   --color-accent: #ec6dff;
   --color-primary: #ffffff;
   --color-secondary: #b5b0b7;
+
+  --color-header-border: rgba(236, 109, 255, 0.5);
 }
