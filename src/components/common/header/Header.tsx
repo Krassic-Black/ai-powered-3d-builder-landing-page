@@ -46,9 +46,9 @@ const Header = () => {
 
       <div className="blob-3 absolute top-0 right-10 md:right-50 size-9 bg-tl-blob-bg -z-20" />
       {/* Header container */}
-      <div className="header-container flex justify-between items-center py-0.5 sm:px-5 sm:py-1.5 bg-header-bg border border-header-border rounded-full mt-5 backdrop-blur-3xl">
+      <div className="header-container flex justify-between items-center py-2.5 sm:px-5 sm:py-1.5 bg-header-bg border border-header-border rounded-full mt-5 backdrop-blur-3xl">
         {/* Logo */}
-        <div className="logo-container flex items-center size-8 sm:size-12">
+        <div className="logo-container flex items-center size-10 sm:size-12">
           <img className="h-full w-full" src={alcosLogo} alt="Alcos Logo" />
           <p className="text-primary font-medium sm:font-bold">
             Alc<span className="uppercase">os</span>
@@ -74,16 +74,16 @@ const Header = () => {
           onClick={handleMenuClick}
         >
           {!isOpen ? (
-            <FaBars className="text-primary p-0.5" size={20} />
+            <FaBars className="text-primary p-0.5" size={24} />
           ) : (
-            <IoClose className="text-primary p-0.5" size={20} />
+            <IoClose className="text-primary p-0.5" size={24} />
           )}
         </div>
       </div>
 
       {/* Mobile nav menu (separate from header flow) */}
       <div
-        className={`sm:hidden fixed mt-2.5 top-12 right-0 h-screen w-2/3 bg-nav-bg backdrop-blur-2xl transform transition-transform z-40 ${
+        className={`sm:hidden fixed mt-2.5 top-18 right-0 h-screen w-2/3 bg-nav-bg backdrop-blur-2xl transform transition-transform z-40 ${
           isOpen ? "translate-x-0" : "translate-x-120"
         }`}
       >

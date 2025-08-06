@@ -51,7 +51,7 @@ const Hero = () => {
           infinite: true,
           speed: 500,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 3000,
         },
       },
     ],
@@ -192,21 +192,21 @@ const Hero = () => {
       animate="visible"
       variants={containerVariants}
     >
-      <motion.div className="hero-container grid md:grid-cols-2 md:mt-16">
+      <motion.div className="hero-container grid md:grid-cols-2 mt-16">
         {/* Text Content */}
         <motion.div
           className="hero-text order-2 md:order-1 col-span-1"
           variants={containerVariants}
         >
           <motion.p
-            className="w-fit bg-text-bg text-secondary text-xs sm:text-base py-1.5 px-2.5 sm:py-2.5 sm:px-3.5 rounded-4xl border-t border-header-border font-normal"
+            className="w-fit bg-text-bg text-secondary text-sm sm:text-base py-1.5 px-2.5 sm:py-2.5 sm:px-3.5 rounded-4xl border-t border-header-border font-normal"
             variants={itemVariants}
           >
             Lightning-fast, low-cost, easy.
           </motion.p>
 
           <motion.h2
-            className="text-primary text-4xl md:text-7xl font-medium my-2.5 sm:my-5"
+            className="text-primary text-4xl md:text-7xl font-medium my-5 sm:my-5"
             variants={itemVariants}
           >
             Your AI-Powered 3D Builder
@@ -220,11 +220,11 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="action-btns text-primary font-semibold flex flex-col sm:flex-row items-center gap-5"
+            className="action-btns text-primary font-semibold flex flex-col sm:flex-row items-center gap-5 my-5"
             variants={containerVariants}
           >
             <motion.button
-              className="flex items-center gap-1.5 sm:gap-2.5 bg-text-bg text-sm sm:text-base py-1.5 px-2.5 sm:py-2.5 sm:px-3.5 rounded-4xl border-t border-[#96519F] transition-all duration-300 hover:shadow-[0_4px_10px_rgba(218,38,222,0.22)] cursor-pointer"
+              className="flex items-center sm:w-auto w-full justify-center gap-1.5 sm:gap-2.5 bg-text-bg text-sm sm:text-base py-2.5 px-2.5 sm:py-2.5 sm:px-3.5 rounded-4xl border-t border-[#96519F] transition-all duration-300 hover:shadow-[0_4px_10px_rgba(218,38,222,0.22)] cursor-pointer"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
@@ -257,7 +257,7 @@ const Hero = () => {
           />
 
           <motion.p
-            className="absolute md:top-45 top-25 md:left-25 left-3 z-30 bg-[rgba(144, 128, 146, 0.15)] border border-[rgba(144,128,146,0.5)] backdrop-blur-[10px] text-primary text-xs sm:text-sm font-medium px-4 py-1.5 rounded-lg md:rounded-xl"
+            className="absolute md:top-45 top-30 md:left-25 left-3 z-30 bg-[rgba(144, 128, 146, 0.15)] border border-[rgba(144,128,146,0.5)] backdrop-blur-[10px] text-primary text-sm sm:text-sm font-medium px-4 py-1.5 rounded-lg md:rounded-xl"
             variants={badgeVariants}
             custom={0}
             whileHover="hover"
@@ -265,7 +265,7 @@ const Hero = () => {
             No GPU needed
           </motion.p>
           <motion.p
-            className="absolute md:bottom-30 bottom-12 md:right-8 right-0 z-30 bg-[rgba(144, 128, 146, 0.15)] border border-[rgba(144,128,146,0.5)] backdrop-blur-[10px] text-primary text-xs sm:text-sm font-medium px-4 py-1.5 rounded-lg md:rounded-xl"
+            className="absolute md:bottom-30 bottom-18 md:right-8 right-0 z-30 bg-[rgba(144, 128, 146, 0.15)] border border-[rgba(144,128,146,0.5)] backdrop-blur-[10px] text-primary text-sm sm:text-sm font-medium px-4 py-1.5 rounded-lg md:rounded-xl"
             variants={badgeVariants}
             custom={1}
             whileHover="hover"
@@ -273,7 +273,7 @@ const Hero = () => {
             Up to 12 images per session
           </motion.p>
           <motion.p
-            className="absolute md:bottom-13 bottom-2 md:left-22 left-0 z-30 bg-[rgba(144, 128, 146, 0.15)] border border-[rgba(144,128,146,0.5)] backdrop-blur-[10px] text-primary text-xs sm:text-sm font-medium px-4 py-1.5 rounded-lg md:rounded-xl"
+            className="absolute md:bottom-13 bottom-2 md:left-22 left-0 z-30 bg-[rgba(144, 128, 146, 0.15)] border border-[rgba(144,128,146,0.5)] backdrop-blur-[10px] text-primary text-sm sm:text-sm font-medium px-4 py-1.5 rounded-lg md:rounded-xl"
             variants={badgeVariants}
             custom={2}
             whileHover="hover"
@@ -291,7 +291,7 @@ const Hero = () => {
 
       {/* Partners and Sponsors Slider */}
       <motion.div
-        className="border border-[#0F141C] rounded-lg my-2.5 md:my-0 backdrop-blur-2xl relative z-20"
+        className="border border-[#0F141C] rounded-lg my-5 md:my-0 backdrop-blur-2xl relative z-20"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2 }}
