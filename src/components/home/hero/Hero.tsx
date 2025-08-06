@@ -1,7 +1,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { motion } from "framer-motion";
+import { motion, easeOut } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { MdNavigateNext } from "react-icons/md";
 
 /*Images*/
@@ -84,19 +85,19 @@ const Hero = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut",
+        ease: easeOut,
       },
     },
   };
 
-  const imageVariants = {
+  const imageVariants: Variants = {
     hidden: { scale: 0.9, opacity: 0 },
     visible: {
       scale: 1,
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: "easeOut",
+        ease: [0.42, 0, 0.58, 1],
       },
     },
     hover: {
@@ -105,7 +106,7 @@ const Hero = () => {
     },
   };
 
-  const badgeVariants = {
+  const badgeVariants: Variants = {
     hidden: { scale: 0.8, opacity: 0 },
     visible: (i: number) => ({
       scale: 1,
@@ -124,7 +125,7 @@ const Hero = () => {
     },
   };
 
-  const buttonVariants = {
+  const buttonVariants: Variants = {
     hidden: { opacity: 0, x: -20 },
     visible: {
       opacity: 1,
@@ -139,7 +140,7 @@ const Hero = () => {
     tap: { scale: 0.95 },
   };
 
-  const secondaryButtonVariants = {
+  const secondaryButtonVariants: Variants = {
     hidden: { opacity: 0, x: 20 },
     visible: {
       opacity: 1,
@@ -153,7 +154,7 @@ const Hero = () => {
     tap: { scale: 0.95 },
   };
 
-  const blobVariants = {
+  const blobVariants: Variants = {
     hidden: { scale: 0.8, opacity: 0 },
     visible: {
       scale: 1,
